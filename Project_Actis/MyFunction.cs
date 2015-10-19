@@ -66,7 +66,7 @@ namespace Project_Actis
             Console.WriteLine(sMessage);
         }
 
-        public void WriteFileLog(string Text, string Staff, ParamArrayAttribute Args0)
+        public void WriteFileLog(string Text, string Staff, params string []Args0)
         {
             if (!Directory.Exists("Logs"))
                 Directory.CreateDirectory("Logs");

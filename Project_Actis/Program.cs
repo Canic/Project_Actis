@@ -18,7 +18,6 @@ namespace Project_Actis
 
         static void Main(string[] args)
         {
-            //Push Test!
             Console.Title = "KeRn GameMaster Toolkit - Project Actis!";
             _listener = new TcpListener(IPAddress.Any, 8056);
             _listener.Start();
@@ -129,7 +128,7 @@ namespace Project_Actis
                             Program.removeClient(((IPEndPoint)_clientSocket.Client.RemoteEndPoint).Address.ToString());
                             break;
                         case 1:
-                            _myFunction.WriteFileLog("Searched for Character by function: " + data[1] + " for Character: " + data[2], Program.StaffList.First(kdv => kdv.IPAddress == ((IPEndPoint)_clientSocket.Client.RemoteEndPoint).Address.ToString()).Username);
+                            _myFunction.WriteFileLog("Searched for Character by function: {0} for Character: {1}", Program.StaffList.First(kdv => kdv.IPAddress == ((IPEndPoint)_clientSocket.Client.RemoteEndPoint).Address.ToString()).Username, data[1], data[2]);
                             sendToClient(_SQLClass.searchCharacter(data), networkStream);
                             break;
                         case 2:
