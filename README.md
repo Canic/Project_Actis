@@ -4,4 +4,4 @@ Simple Client/Server OPTool (OperatorTool) for the game Fiesta Online based on a
 
 Very early Alpha and need further development !!!
 
-Current Build: ![alt tag](https://api.travis-ci.org/Canic/Project_Actis.svg?branch=master)
+Current Build: [![Build Status](https://travis-ci.org/Canic/Project_Actis.svg?branch=master)](https://travis-ci.org/Canic/Project_Actis)
